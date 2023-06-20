@@ -2,14 +2,29 @@
 <html lang="en">
 
 <head>
+    <script>
+        // Función para reproducir el audio al cargar la página
+        function reproducirAudio() {
+          var audio = new Audio('Music/TeVoyAmar.mp3');
+          audio.play();
+        }
+      </script>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Akshar&family=Beau+Rivage&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Regalos</title>
 </head>
 
-<body>
+<body onload="reproducirAudio()">
     <div class="contenedor">
-        <img src="./images/Regalo.png">
+        <img src="./images/Regalo.png" class="classe">
+        <a class="centrado mi-boton borde box" href="./index.html"
+            style="margin-top: 195px; margin-left: 0px; height: 40px;">
+            <span>
+                ...Regresar...
+            </span>
+        </a>
     </div>
 </body>
 

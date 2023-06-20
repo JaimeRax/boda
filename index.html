@@ -2,16 +2,24 @@
 <html lang="en">
 
 <head>
+    <script>
+        // Función para reproducir el audio al cargar la página
+        function reproducirAudio() {
+          var audio = new Audio('Music/TeVoyAmar.mp3');
+          audio.play();
+        }
+      </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Akshar&family=Beau+Rivage&display=swap" rel="stylesheet">
     <title>Nuestra Boda</title>
 </head>
 
-<body>
+<body onload="reproducirAudio()">
     <audio controls preload autoplay hidden>
         <source src="./Music/y2mate.com - Axel  Te Voy A Amar.mp3" type="audio/mp3">
         Tu navegador no soporta audio HTML5.
