@@ -1,0 +1,247 @@
+
+
+img {
+  max-width: 100%; /* Ajusta el ancho máximo de la imagen según tus necesidades */
+  max-height: 100%;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.centrado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mi-boton {
+
+    color: #084562;
+    border-color: black;
+    border-radius: 2.5px;
+    padding: 2.5px 5px;
+    border-radius: 2.5px;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    width: 100%;
+    /*El ancho se adapta al tamaño de pantalla*/
+    max-width: 200px;
+    /*Tamaño máximo del botón*/
+    font-family: 'Akshar', sans-serif;
+    font-family: 'Beau Rivage', cursive;
+    text-decoration: none;
+
+}
+
+.borde {
+    border: 1px solid black;
+}
+
+.box {
+    width: 100%px;
+    max-width: 200px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(transparent,
+            transparent, transparent, #E1B0AC);
+    animation: animate 4s linear infinite;
+    animation-delay: -2s;
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(transparent, transparent, 
+    transparent, #969082);
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.box span {
+    inset: 5px;
+    border-radius: 16px;
+    background-color: #fff;
+    z-index: 1;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .contenedor {
+    color: #000000;
+    text-align: center;
+  }
+  .cartel {
+    width: 109px;
+    height: 109px;
+    padding: 10px 0px 5px 0px;
+    text-align: center;
+    display: inline-block;
+    margin: 5px;
+    border: 3px solid #000000;
+    border-radius: 5px;
+  }
+  .cartel>div{
+    font-size: 50px;
+    font-family: 'Chela One', sans serif;
+    animation: fade 3s;
+    line-height: 30px;
+    margin-top: 5px;
+  }
+  .cartel>div>h3 {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: normal;
+  }
+  .h3 {
+    bottom: 0;
+    margin: 0 auto ;
+  }
+
+  .contenido {
+    
+    width: 100%;
+    margin: 0 auto;
+    border: 0px solid black;
+    z-index: 10;
+  }
+  li {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+  }
+  li span {
+    display: block;
+    font-size: 4.5rem;
+  }
+  .numeros {
+    font-family: 'Chela one', sans-serif;
+    font-size: 60px;
+    transition: .3s;
+    animation-name: fade;
+    animation-duration: 3s;
+  }
+  .responsivo1 {
+    display: inline-block
+  }
+  .responsivo2 {
+    display: inline-block
+  }
+  @media (max-width: 450px) {  
+ 
+    .banner {
+     margin-bottom: 30px; 
+    }
+    .cartel {
+      height: 99px;
+      width: 99px;
+    }
+    .cartel>div{
+      font-size: 45px;
+    }
+    .cartel>div>h3 {
+      font-size: 10px;
+      margin-top: 0px;
+    }
+
+  }
+  @keyframes fade {
+      0%   {
+        opacity: 0;
+    }
+      30%   {
+        opacity: 0;
+    }  
+      100% {
+        opacity: 1;
+    }
+  }
+
+  
+  .center-abs{
+    top:40%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    position: absolute;
+  }
+  
+  .charts{
+    display: flex;
+  
+  }
+  .chart{
+    position: relative;
+    width:25%;
+    height: 150px;
+  }
+  .chart svg{
+    z-index: 2;
+  }
+  .chart h3{
+    color:#fff;
+    font-size: 1.2em;
+    position: absolute;
+    bottom:10px;
+    text-align: center;
+    width: 100%;
+    text-shadow: 1px 1px 10px #878377;
+    font-family: 'Roboto';
+  }
+  
+  .circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    z-index:1;
+    border:10px #EFE2D9 solid;
+  }
+  .text{
+    z-index: 3;
+    text-align: center;
+    width: 100%;
+    font-family: 'Roboto';
+    font-size: 3em;
+    font-weight: 700;
+    color:#3d382e
+  }
+  
+  .outer{
+    fill: transparent;
+    stroke: #E9BAB6;
+    stroke-width: 10; 
+    stroke-dasharray: 285; 
+    transform: rotate(270deg) translate(-100px, 0); 
+  }
